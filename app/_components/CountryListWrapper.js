@@ -37,7 +37,7 @@ function CountryListWrapper({ countries }) {
   }, [search]);
 
   return (
-    <div className="mx-auto max-w-5xl space-y-8 px-7 py-4">
+    <div className="mx-auto mb-10 max-w-5xl space-y-8 px-7 py-4">
       <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
         <Search search={search} setSearch={setSearch} />
         <Filter setSearch={setSearch} />

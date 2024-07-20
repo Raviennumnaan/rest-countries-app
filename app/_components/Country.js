@@ -25,7 +25,7 @@ async function Country({ country }) {
   );
 
   return (
-    <section className="flex flex-col items-center justify-between gap-20 sm:flex-row">
+    <section className="mb-10 flex flex-col items-center justify-between gap-20 sm:flex-row">
       <div className="relative h-80 w-80 sm:h-[25rem] sm:w-[25rem]">
         <Image
           className="object-cover"
@@ -78,7 +78,7 @@ async function Country({ country }) {
         {borderCountries.length > 0 && (
           <div className="mt-7 flex gap-4 text-sm">
             <h4 className="translate-y-2 font-medium">Border Countries:</h4>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3">
               {borderCountries.map((country) => (
                 <BorderCountryButton country={country} key={country.cca3} />
               ))}
